@@ -17,7 +17,7 @@ class Main {
 int num1 = 5;
 int num2 = 6;
 String wrd = "The sum is ";
-System.out.println( "The Sum is " num1 + num2 );
+System.out.println( wrd num1 + num2 );
 
 
 
