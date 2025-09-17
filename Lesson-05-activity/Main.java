@@ -16,8 +16,8 @@ class Main {
    
 int num1 = 5;
 int num2 = 6;
-String wrd = "The sum is ";
-System.out.println( wrd num1 + num2 );
+System.out.println( "The sum of the integers: ");
+System.out.println( num1 + num2 );
 
 
 
@@ -29,6 +29,11 @@ System.out.println( wrd num1 + num2 );
     
 */
 
+double gra1 = 87.5;
+double gra2 = 97.4;
+double gra3 = 96.7;
+System.out.println("\nThe sum of the grades:");
+System.out.println( gra1 + gra2 + gra3 );
 
 
 /*  
@@ -39,7 +44,9 @@ System.out.println( wrd num1 + num2 );
     NOTE: Does it look correct, check with a calculator?
 */
 
-
+double ans = ( gra1 + gra2 + gra3 ) / 3;
+System.out.println("\nThe average of the grades:");
+System.out.println( ans );
 
 /*  
     Challenge 4:
@@ -47,7 +54,14 @@ System.out.println( wrd num1 + num2 );
     Declare and assign values to any new variables
 
 */
-  
+
+double x = 5.1;
+double A = 6.7;
+double y = A/(x+1);
+System.out.println( "\nlet x = 5.1" );
+System.out.println( "let A = 6.7" );
+System.out.println( "y = A/(x+1), y =" );
+System.out.println( y );
 
 /*  
     Challenge 5:
@@ -56,8 +70,12 @@ System.out.println( wrd num1 + num2 );
     Declare and assign values to any new variables
 
 */
- 
 
+double anse1 = (2 * x);
+double anse2 = (x+1) * (-x/2);
+double anse = (anse1 * anse2)/A;
+System.out.println( "\n y = [ 2x(x+1)(-x/2) ] / A, y =" );
+System.out.println( anse );
 
 
 
@@ -70,7 +88,13 @@ System.out.println( wrd num1 + num2 );
     Declare and assign values to any new variables
 */
  
-
+double b = 4.2;
+double h = 7.5;
+double area = (b * h)/2;
+System.out.println( "\nlet b = 4.2" );
+System.out.println( "let h = 7.5" );
+System.out.println( "area = (1/2)(bh), area = " );
+System.out.println( area );
 
 
 
@@ -91,8 +115,14 @@ System.out.println( wrd num1 + num2 );
     are left over after we filled as many baskets of 12 eggs.
 */
 
+int eggs = 100;
+int bas = eggs/12;
+System.out.println("\n100 eggs will fully fill baskets of 12 eggs. baskets = ");
+System.out.println( bas );
 
-
+System.out.println("Eggs left over = ");
+int rem = 100%12;
+System.out.println( rem );
 
 
     // **************************************************
