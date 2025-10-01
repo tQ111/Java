@@ -18,7 +18,7 @@ class Main {
   }
   
   double coneVolume(double radius,double height){
-	return 1.0/3.0 * ( height * Math.PI * Math.pow(radius, 2) );
+	  return 1.0/3.0 * ( height * Math.PI * Math.pow(radius, 2) );
   
   }
 
@@ -31,17 +31,17 @@ class Main {
 
     System.out.println( "Enter temperature (farenhiet)" );
     double tempF = Input.readDouble();
-    print( tempF + "F =  " + FtoC(tempF) + "C" );
+    print("\n" + tempF + "F = " + FtoC(tempF) + "C");
 
     System.out.println("Enter the radius of the sphere ");
     double radi= Input.readDouble();
-    print( "Volume of sphere= " + sphereVolume(radi) );
+    print( "\nVolume of sphere= " + sphereVolume(radi) );
 
     System.out.println("Enter radius");
     radi= Input.readDouble();
     System.out.println( "Enter height" );
     double height = Input.readDouble();
-    print( "Volume of cone= " + coneVolume(radi,height) );
+    print( "\nVolume of cone= " + coneVolume(radi,height) );
 
   }
 }
