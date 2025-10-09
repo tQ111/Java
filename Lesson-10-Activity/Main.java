@@ -10,7 +10,7 @@ class Main {
 		double value = Input.readDouble();
 		System.out.println("Your GPA is " + gpa(value) );
 
-		System.out.println("\nEnter Grade Level");
+		System.out.println("\nEnter Grade Level (9-12)");
 		int grade = Input.readInt();
 		System.out.println("Enter Amount of Credits");
 		double credits = Input.readDouble();
