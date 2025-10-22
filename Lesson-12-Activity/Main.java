@@ -101,7 +101,7 @@ class Main {
   }
 
   boolean validatePswd(String password){
-    if( (password.length() > 5 && password.length() < 8 ) && ( !password.contains("^") && !password.contains("*") && !password.contains(",") ) ){
+    if( (password.length() > 5 && password.length() < 8 ) && ( !password.contains("^") && !password.contains("*") && !password.contains("(") && !password.contains(")") ) ){
       return true;
     }else{
       return false;
