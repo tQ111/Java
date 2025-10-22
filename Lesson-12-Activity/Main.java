@@ -101,21 +101,13 @@ class Main {
   }
 
   boolean validatePswd(String password){
-    if( (password.length() > 5 && password.length() < 8 ) && ( password.contains("^") = false && password.contains("*") = false && password.contains(",") = false) ){
+    if( (password.length() > 5 && password.length() < 8 ) && ( !password.contains("^") && !password.contains("*") && !password.contains(",") ) ){
       return true;
     }else{
       return false;
     }
   }
 
-//* 
-//
-// Challenge 5:
-// Create a function validatePswd that accepts a password. The password must have 5 to 8 characters that are letters, numbers 
-// or any symbol except ^, *, (, ) 
-// Return true if it's valid, otherwise return false.
-// 
-// *\\
 
   
 }
