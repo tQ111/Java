@@ -8,11 +8,21 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-    System.out.println("Enter N value");
-    double nvalue = Input.readDouble();
-    System.out.println( spaces(nvalue) );
+    System.out.println("Spaces - Enter N value");
+    int nvalue = Input.readInt();
+    System.out.println("[" + spaces(nvalue) + "]");
     
-    
+    System.out.println("\nHarmonic - Enter N value");
+    int nvalue1 = Input.readInt();
+    System.out.println("harmonic = " + harmonic(nvalue1) );
+
+
+
+    System.out.println("\nFibonacci - Enter N value");
+    int nvalue3 = Input.readInt();
+    System.out.println("Fibonacci = " + fib(nvalue3) );
+
+
   }
 
   String spaces(int nvalue){
@@ -21,16 +31,63 @@ class Main {
 	    output += " ";
     }
     return output + "DONE";
-
   }
 
+  double harmonic(int nvalue1){
+    double sum = 0;
+    for(int x = 0; x <= nvalue1; x++){
+      sum += (1.0/nvalue1);
+    }
+    return sum;
+  }
+
+  String fib(int nvalue3){
+    String fibo = "0,1,1,2,3,5,8,13,21,34";
+    int pos = nvalue3 * 2;
+    if(nvalue3 <= 7){
+      return fibo.substring(0, pos-1);
+    }else{
+      return fibo.substring(0, pos-1) + fibo.substring(pos-1, pos+1);
+    }
+  }
   
 }
 
-  
+/*
+
+Challenge 3:
+Approximate the function sine. Using the formule in Sine.PNG
+Write a function sin that accepts the number of terms to sum and the degree in radiant (pi/6) and return the sum.
+
+Challenge 4:
+Write function fib where the function accepts a integer N and displays the first N fibinocci numbers. The sequence of numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,...
+
+Example: N=6 , the function displays: 0, 1, 1, 2, 3, 5
+
+
+Challenge 5:
+Create a function mTable that displays the multiplication table as shown in file MTable.png
+
+HINT: Create a function nRow that can generate and display the numbers in a row. Use that function within a loop to generate all the rows.
 
 
 
+Bonus  Challenge:
+
+NCR (combination) formula is used to find the possible arrangements where selection is done without order consideration 
+
+To calculate the combination of a set with N items being arranged in a grouping of R elements from the set:
+nCr = N!/(R!(N-R)!)  (NOTE: N! is fact(N), the function you just wrote above).
 
 
+Write a function nCr that accepts an integer N and R and returns the permuation. NOTE: Use the function fact from challenge 3 in this function. Test this function before moving on to the next function
+    
+Write a function biCoeff that accepts an integer N and displays the binomial coeffiecents for 
+(A + B)^N expansion.  HINT: You do this by calling nCr function you wrote in a loop from 1 to N
 
+Example: 
+Look at BinomialExapansion.png
+biCoeff(5) ==> 1 5 10 10 5 1
+biCoeff(4) ==> 1 4 6 4 1
+ 
+*/
