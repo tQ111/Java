@@ -6,13 +6,24 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-    dog toto = new dog();
-    dog snoopy = new dog();
-    dog poophy = new dog();
+    dog dog1 = new dog();
+    dog1.name = "Toto"
+    dog1.breed = "Terrier";
+    dog1.age = 3;
 
-    toto.bark()
-    snoopy.bark()
-    poophy.bark()
+    dog dog2 = new dog();
+    dog1.name = "Snoopy"
+    dog1.breed = "Beagle";
+    dog1.age = 75;
+
+    dog dog3 = new dog();
+    dog1.name = "Poophy"
+    dog1.breed = "Corgi";
+    dog1.age = 4;
+
+    dog1.bark()
+    dog2.bark()
+    dog3.bark()
 
 
   }
