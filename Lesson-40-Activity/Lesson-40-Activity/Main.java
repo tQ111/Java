@@ -19,12 +19,28 @@ class Main {
    
 
     String queryResult = "";
-    String sql = "Select * From students limit 10;";
-
     Database db = new Database("jdbc:sqlite:students.db");
+    String sql = "Select * From students where teacher1 = 'BANU';";
     queryResult = db.runSQL(sql, "table-auto");
     print(queryResult);
 
+    String queryResult = "";
+    Database db = new Database("jdbc:sqlite:students.db");
+    String sql = "Select * From students where teacher1 = 'BANU' AND period = 10;";
+    queryResult = db.runSQL(sql, "table-auto");
+    print(queryResult);
+
+    String queryResult = "";
+    Database db = new Database("jdbc:sqlite:students.db");
+    String sql = "Select studentID From students;";
+    queryResult = db.runSQL(sql, "table-auto");
+    print(queryResult);
+
+    String queryResult = "";
+    Database db = new Database("jdbc:sqlite:students.db");
+    String sql = "Select (studentID, course, period) From students where teacher1 = 'BANU';";
+    queryResult = db.runSQL(sql, "table-auto");
+    print(queryResult);
 
 
     
